@@ -30,5 +30,5 @@ def encrypt(plain_text, shift_amount):
     ##🐛Bug alert: What happens if you try to encode the word 'civilization'?🐛
     #Double the alphabet
 
-#TODO-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message.
+#TODO-3: Call the encrypt function and pass in the user inputs. You should be able to Day 22 - Pong Game Solutions the code and encrypt a message.
 encrypt(plain_text=text, shift_amount=shift)
