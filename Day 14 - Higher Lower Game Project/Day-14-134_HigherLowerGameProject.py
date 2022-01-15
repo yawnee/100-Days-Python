@@ -28,7 +28,7 @@ def game():
             #  Follower 2 -------------
             #  print(data[random_number2])
             follower2 = data[random_number2]
-            print(f'Compare B: ' + (follower2['name']) + ', a ' + (follower2['description']) + ', from ' + (
+            print(f'Against B: ' + (follower2['name']) + ', a ' + (follower2['description']) + ', from ' + (
             follower2['country']))
             print(follower2['follower_count'])
             follower2_count = int((follower2['follower_count']))  # Debug help
@@ -39,11 +39,13 @@ def game():
             if guess == 'a':
                 if follower1_count > follower2_count:
                     score += 1
+                    print(f"You're right! You're current score: {score}")
                 elif follower1_count < follower2_count:
                     game_over = True
             elif guess == 'b':
                 if follower2_count > follower1_count:
                     score += 1
+                    print(f"You're right! You're current score: {score}")
                 elif follower2_count < follower1_count:
                     game_over = True
 
