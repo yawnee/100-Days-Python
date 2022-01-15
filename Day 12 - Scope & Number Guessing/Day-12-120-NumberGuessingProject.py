@@ -1,7 +1,9 @@
 # Introducing the final project: the number guessing game
 
 import random
-#from art import logo
+from art import logo
+
+print(logo)
 
 print("Welcome to the number guessing game!")
 print("I'm thinking of a number between 1 and 100")
