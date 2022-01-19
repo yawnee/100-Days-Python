@@ -20,15 +20,11 @@ with open("Input\\Names\\invited_names.txt", mode="r") as invited_names:
 
 for every_name in names:
     with open(f"Output\\ReadyToSend\\{every_name}.txt", mode="w") as output:
-        print(invitation_template.replace("[name]", every_name)) # Debugging help
+        print(invitation_template.replace("[name]", every_name))  # Debugging help
         output.write(invitation_template.replace("[name]", every_name))
-
-
-
 
 # ------------------ Solution below from course -----------------------
 PLACEHOLDER = "[name]"
-
 
 with open("./Input/Names/invited_names.txt") as names_file:
     names = names_file.readlines()
@@ -40,4 +36,3 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
         new_letter = letter_contents.replace(PLACEHOLDER, stripped_name)
         with open(f"./Output/ReadyToSend/letter_for_{stripped_name}.txt", mode="w") as completed_letter:
             completed_letter.write(new_letter)
-
