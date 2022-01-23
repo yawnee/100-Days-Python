@@ -39,4 +39,26 @@ print('')
 print("Change list to upper case")
 upper_case_names = [name.upper() for name in names if len(name) > 5]
 print(upper_case_names)
+print('')
 
+# Example 5: Squaring numbers
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+squared_numbers = [num ** 2 for num in numbers]
+print(squared_numbers)
+print('')
+
+# Example 6: Filtering even numbers
+result = [num for num in numbers if num % 2 == 0]
+print(result)
+print('')
+
+# Example 7: You are going to create a list called result which contains the numbers that are common in both files.
+import pandas
+with open("file1.txt") as file1:
+    data_file1 = file1.readlines()
+
+with open('file2.txt') as file2:
+    data_file2 = file2.readlines()
+
+same_number = [int(num) for num in data_file1 if num in data_file2]
+print(same_number)
