@@ -14,11 +14,9 @@ print("")
 # ---------------------------- Files ------------------------------- #
 
 # Create three files and insert your credentials
-with open('./data/email.txt', mode='r') as username, open('./data/password.txt', mode='r') as password, open(
-        './data/sender.txt', mode='r') as sender:
+with open('./data/email.txt', mode='r') as username, open('./data/password.txt', mode='r') as password:
     username = username.read()
     password = password.read()
-    sender = sender.read()
 
 with open('./data/letter_1.txt', mode='r') as letter_1, open('./data/letter_2.txt', mode='r') as letter_2, open(
         './data/letter_3.txt', mode='r') as letter_3:
