@@ -1,2 +1,1 @@
-
-Living through the journey of the Udemy course: 100 days of python from udemy
+My journey on completing the Udemy course "100 Days of Python".
