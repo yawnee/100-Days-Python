@@ -46,3 +46,5 @@ travel_log2 = [
 
 print(travel_log2[0])
 
+# This is an example of drilling down nested dictionaries
+# test = weather_data['hourly'][0]['weather'][0]['id']
