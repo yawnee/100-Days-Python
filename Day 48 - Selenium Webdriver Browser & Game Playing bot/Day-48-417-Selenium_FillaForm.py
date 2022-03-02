@@ -16,7 +16,7 @@ driver.get('https://secure-retreat-92358.herokuapp.com/')
 # search.send_keys(Keys.ENTER)
 
 # Inserting credentials on a form
-
+# You need to find the <input> HTML
 first_name = driver.find_element_by_name("fName")
 first_name.send_keys("john")
 second_name = driver.find_element_by_name("lName")
