@@ -5,7 +5,6 @@ import os
 USERNAME = os.environ.get('USERNAME')
 TOKEN = os.environ.get('TOKEN')
 
-
 pixela_endpoint = "https://pixe.la/v1/users"
 GRAPH_ID = 'graph1'
 
